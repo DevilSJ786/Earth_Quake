@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Earth_Quake/Earth_Quake/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24166666666666667" />
+        <entry key="..\:/Earth_Quake/Earth_Quake/app/src/main/res/drawable/b1.xml" value="0.24166666666666667" />
+        <entry key="..\:/Earth_Quake/Earth_Quake/app/src/main/res/drawable/b2.xml" value="0.24166666666666667" />
+        <entry key="..\:/Earth_Quake/Earth_Quake/app/src/main/res/drawable/b3.xml" value="0.24166666666666667" />
+        <entry key="..\:/Earth_Quake/Earth_Quake/app/src/main/res/drawable/gradient_background.xml" value="0.24166666666666667" />
+        <entry key="..\:/Earth_Quake/Earth_Quake/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24166666666666667" />
+        <entry key="..\:/Earth_Quake/Earth_Quake/app/src/main/res/drawable/magnitude_circle.xml" value="0.24166666666666667" />
         <entry key="..\:/Earth_Quake/Earth_Quake/app/src/main/res/layout/activity_main.xml" value="0.24895833333333334" />
         <entry key="..\:/Earth_Quake/Earth_Quake/app/src/main/res/layout/list_item.xml" value="0.24895833333333334" />
+        <entry key="..\:/Earth_Quake/Earth_Quake/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14270833333333333" />
       </map>
     </option>
   </component>
