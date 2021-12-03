@@ -19,57 +19,44 @@ import java.util.ArrayList;
 public class WordAdapter extends ArrayAdapter<Earthquake> {
 
     public WordAdapter(Activity context, ArrayList<Earthquake> earthquakes) {
-        super(context,0, earthquakes);
+        super(context, 0, earthquakes);
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
 
-
         Earthquake earthquake = getItem(position);
-
-
         TextView nameTextView = listItemView.findViewById(R.id.mag);
-
         nameTextView.setText(earthquake.getMagnitude());
 
         GradientDrawable magnitudeCircle = (GradientDrawable) nameTextView.getBackground();
-
-
         int magnitudeColor = getMagnitudeColor(Double.parseDouble((earthquake.getMagnitude())));
-
-
         magnitudeCircle.setColor(magnitudeColor);
 
-
         TextView numberTextView = listItemView.findViewById(R.id.place);
-
         numberTextView.setText(earthquake.getLocation());
 
         TextView loc = listItemView.findViewById(R.id.place2);
         loc.setText(earthquake.getLocation1());
 
-         TextView timeTextView = listItemView.findViewById(R.id.time);
-
+        TextView timeTextView = listItemView.findViewById(R.id.time);
         timeTextView.setText(earthquake.getDate());
 
         TextView hours = listItemView.findViewById(R.id.hour);
         hours.setText(earthquake.getTime());
-
-        Log.d("devil","listItemView done");
+        Log.d("devil", "listItemView done");
         return listItemView;
     }
 
-    private int getMagnitudeColor(double magnitude){
+    private int getMagnitudeColor(double magnitude) {
         int magnitudeColorResourceId;
         int magnitudeFloor = (int) Math.floor(magnitude);
-        switch(magnitudeFloor) {
+        switch (magnitudeFloor) {
 
             case 0:
 

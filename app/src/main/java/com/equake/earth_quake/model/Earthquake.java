@@ -2,9 +2,6 @@ package com.equake.earth_quake.model;
 
 import android.util.Log;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Earthquake {
 
     private final String magnitude;

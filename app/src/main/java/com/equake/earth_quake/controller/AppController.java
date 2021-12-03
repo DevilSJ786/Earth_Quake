@@ -10,9 +10,7 @@ public class AppController extends Application {
     private static AppController instance;
     private RequestQueue requestQueue;
 
-
     public static synchronized AppController getInstance() {
-
         return instance;
     }
 
@@ -29,7 +27,6 @@ public class AppController extends Application {
     public  void clr(){
         requestQueue.getCache().clear();
     }
-
 
     @Override
     public void onCreate() {
